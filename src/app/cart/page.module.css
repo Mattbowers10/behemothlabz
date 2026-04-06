@@ -1,0 +1,78 @@
+.page { background: var(--bl-bg-primary); padding: var(--bl-space-10) 0 var(--bl-space-16); min-height: 60vh; }
+.heading { color: var(--bl-text-primary); margin-bottom: var(--bl-space-8); }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: var(--bl-space-8);
+  align-items: flex-start;
+}
+
+.itemsCol {}
+
+.empty {
+  background: var(--bl-color-gunmetal);
+  border: 1px solid var(--bl-color-steel-700);
+  border-radius: var(--bl-radius-card);
+  padding: var(--bl-space-16);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--bl-space-4);
+}
+.emptyText { font-size: 1.125rem; color: var(--bl-text-primary); margin-bottom: 0; }
+.emptyNote { font-size: 0.875rem; color: var(--bl-color-steel-500); font-style: italic; margin-bottom: 0; }
+
+/* Summary card */
+.summaryCol { position: sticky; top: 80px; }
+.summaryCard {
+  background: var(--bl-color-gunmetal);
+  border: 1px solid var(--bl-color-steel-700);
+  border-radius: var(--bl-radius-card);
+  padding: var(--bl-space-5);
+  margin-bottom: var(--bl-space-4);
+}
+.summaryTitle { color: var(--bl-text-primary); display: block; margin-bottom: var(--bl-space-4); }
+.summaryRows { display: flex; flex-direction: column; gap: var(--bl-space-3); margin-bottom: var(--bl-space-4); }
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--bl-text-secondary);
+}
+.freeShipping { color: var(--bl-color-success); font-size: 0.8125rem; }
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--bl-space-4);
+  border-top: 1px solid var(--bl-color-steel-700);
+  margin-bottom: var(--bl-space-4);
+}
+.totalLabel { font-weight: 600; color: var(--bl-text-primary); }
+.totalVal { font-size: 1.25rem; font-weight: 700; color: var(--bl-text-primary); }
+.checkoutBtn { width: 100%; justify-content: center; }
+.trustRow {
+  display: flex;
+  align-items: center;
+  gap: var(--bl-space-2);
+  font-size: 0.75rem;
+  color: var(--bl-color-steel-500);
+  margin-top: var(--bl-space-3);
+  justify-content: center;
+}
+.trustIcon { color: var(--bl-color-success); }
+
+.disclaimer {
+  font-size: 0.75rem;
+  color: var(--bl-color-steel-600);
+  line-height: 1.6;
+  font-style: italic;
+}
+.disclaimer p { margin-bottom: 0; }
+
+@media (max-width: 768px) {
+  .layout { grid-template-columns: 1fr; }
+  .summaryCol { position: static; }
+}

@@ -1,0 +1,97 @@
+/* ============================================================
+   Behemoth Labz — Design Token System v2.0
+   Brand System: Phase 3
+   All design values come from this file. No magic numbers.
+   ============================================================ */
+
+:root {
+  /* ── Foundation ─────────────────────────────────────────── */
+  --bl-color-abyss:    #0C0E14;
+  --bl-color-gunmetal: #161A22;
+  --bl-color-slate:    #1E2330;
+  --bl-color-ivory:    #F5F3EF;
+  --bl-color-white:    #FFFFFF;
+
+  /* ── Reactor Blue (Primary Action) ──────────────────────── */
+  --bl-color-reactor-300: #6B91FF;
+  --bl-color-reactor-400: #3D6FFF;
+  --bl-color-reactor-500: #1E56FF;
+  --bl-color-reactor-600: #0A3FE0;
+  --bl-color-reactor-700: #0830B0;
+
+  /* ── Category Colors (accent-only — never full bg) ───────── */
+  --bl-color-sarms:       #FF6B35;  /* Ember Orange */
+  --bl-color-peptides:    #00C9A7;  /* Helix Teal */
+  --bl-color-nootropics:  #A855F7;  /* Synapse Purple */
+  --bl-color-prohormones: #EF4444;  /* Forge Red */
+  --bl-color-supplements: #22C55E;  /* Vita Green */
+
+  /* ── Status ─────────────────────────────────────────────── */
+  --bl-color-success: #10B981;
+  --bl-color-warning: #F59E0B;
+  --bl-color-error:   #EF4444;
+  --bl-color-info:    #3D6FFF;
+
+  /* ── Steel Neutral Scale ─────────────────────────────────── */
+  --bl-color-steel-100: #F7F8FA;
+  --bl-color-steel-200: #E8EAF0;
+  --bl-color-steel-300: #D1D5DE;
+  --bl-color-steel-400: #9CA3B4;
+  --bl-color-steel-500: #6B7285;
+  --bl-color-steel-600: #4B5268;
+  --bl-color-steel-700: #2D3348;
+  --bl-color-steel-800: #1C2035;
+
+  /* ── Shadows (whisper system) ────────────────────────────── */
+  --bl-shadow-none:     none;
+  --bl-shadow-whisper:  rgba(97,104,117,.05) 0px 1px 1px, rgba(97,104,117,.05) 0px 2px 2px;
+  --bl-shadow-subtle:   rgba(97,104,117,.08) 0px 2px 4px, rgba(97,104,117,.05) 0px 4px 8px;
+  --bl-shadow-elevated: rgba(97,104,117,.12) 0px 4px 8px, rgba(97,104,117,.06) 0px 8px 16px;
+
+  /* ── Border Radius (structural — max 8px) ────────────────── */
+  --bl-radius-micro:      2px;
+  --bl-radius-subtle:     3px;
+  --bl-radius-standard:   4px;
+  --bl-radius-comfortable: 5px;
+  --bl-radius-card:       8px;
+
+  /* ── Spacing Scale (base 8px) ────────────────────────────── */
+  --bl-space-0:    0px;
+  --bl-space-0-5:  2px;
+  --bl-space-1:    4px;
+  --bl-space-2:    8px;
+  --bl-space-3:    12px;
+  --bl-space-4:    16px;
+  --bl-space-6:    24px;
+  --bl-space-8:    32px;
+  --bl-space-12:   48px;
+  --bl-space-16:   64px;
+  --bl-space-24:   96px;
+
+  /* ── Typography ──────────────────────────────────────────── */
+  --bl-font-heading: 'Space Grotesk', sans-serif;
+  --bl-font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --bl-font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  /* ── Layout ──────────────────────────────────────────────── */
+  --bl-max-width:    1150px;
+  --bl-nav-height:   64px;
+
+  /* ── Semantic Tokens: Dark Mode (default) ────────────────── */
+  --bl-bg-primary:    var(--bl-color-abyss);
+  --bl-bg-elevated:   var(--bl-color-gunmetal);
+  --bl-bg-tertiary:   var(--bl-color-slate);
+  --bl-text-primary:  var(--bl-color-steel-100);
+  --bl-text-secondary: var(--bl-color-steel-400);
+  --bl-border-primary: var(--bl-color-steel-700);
+}
+
+/* ── Light Mode Override ──────────────────────────────────── */
+[data-theme="light"] {
+  --bl-bg-primary:    var(--bl-color-ivory);
+  --bl-bg-elevated:   var(--bl-color-white);
+  --bl-bg-tertiary:   var(--bl-color-steel-100);
+  --bl-text-primary:  var(--bl-color-abyss);
+  --bl-text-secondary: var(--bl-color-steel-600);
+  --bl-border-primary: var(--bl-color-steel-300);
+}

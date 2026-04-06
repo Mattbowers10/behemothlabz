@@ -1,0 +1,44 @@
+.section {
+  background: linear-gradient(135deg, var(--bl-color-slate) 0%, var(--bl-color-gunmetal) 100%);
+  border-top: 1px solid var(--bl-color-steel-700);
+  border-bottom: 1px solid var(--bl-color-steel-700);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--bl-space-16);
+  align-items: center;
+}
+
+.eyebrow { color: var(--bl-color-reactor-400); display: block; margin-bottom: var(--bl-space-2); }
+.heading { color: var(--bl-text-primary); margin-bottom: var(--bl-space-4); }
+.desc { color: var(--bl-text-secondary); line-height: 1.7; margin-bottom: var(--bl-space-8); }
+
+.perks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--bl-space-6);
+}
+
+.perk { display: flex; gap: var(--bl-space-4); align-items: flex-start; }
+
+.perkIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--bl-radius-standard);
+  background: rgba(30,86,255,.12);
+  border: 1px solid rgba(30,86,255,.25);
+  color: var(--bl-color-reactor-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.perkLabel { color: var(--bl-text-primary); margin-bottom: 2px; }
+.perkDesc { font-size: 0.875rem; color: var(--bl-text-secondary); margin-bottom: 0; }
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr; gap: var(--bl-space-10); }
+}

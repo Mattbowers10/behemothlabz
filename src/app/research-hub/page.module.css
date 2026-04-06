@@ -1,0 +1,196 @@
+.page { background: var(--bl-bg-primary); min-height: 100vh; }
+
+/* Page header */
+.pageHeader {
+  background: var(--bl-color-gunmetal);
+  border-bottom: 1px solid var(--bl-color-steel-700);
+  padding: var(--bl-space-16) 0 var(--bl-space-14);
+}
+
+.eyebrow { color: var(--bl-color-reactor-400); margin-bottom: var(--bl-space-4); }
+
+.heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--bl-text-primary);
+  line-height: 1.15;
+  margin-bottom: var(--bl-space-6);
+}
+
+.desc {
+  color: var(--bl-text-secondary);
+  max-width: 680px;
+  line-height: 1.7;
+  font-size: 1.0625rem;
+}
+
+/* Layout */
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--bl-space-12);
+  padding: var(--bl-space-12) 0 var(--bl-space-20);
+}
+
+/* Sidebar */
+.sidebar {
+  padding-top: var(--bl-space-1);
+}
+
+.sidebarLabel {
+  color: var(--bl-color-steel-400);
+  margin-bottom: var(--bl-space-3);
+  display: block;
+}
+
+.categoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--bl-space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--bl-space-1);
+}
+
+.categoryItem {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--bl-text-secondary);
+  padding: var(--bl-space-2) 0;
+  border-bottom: 1px solid var(--bl-color-steel-800);
+  cursor: default;
+}
+
+.sidebarNote {
+  background: var(--bl-color-gunmetal);
+  border: 1px solid var(--bl-color-steel-700);
+  border-radius: var(--bl-radius-comfortable);
+  padding: var(--bl-space-4);
+}
+
+.sidebarNoteLabel {
+  color: var(--bl-color-steel-400);
+  margin-bottom: var(--bl-space-2);
+  display: block;
+}
+
+.sidebarNoteText {
+  font-size: 0.8125rem;
+  color: var(--bl-color-steel-500);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Article count */
+.count {
+  font-size: 0.875rem;
+  color: var(--bl-text-secondary);
+  margin-bottom: var(--bl-space-6);
+}
+
+/* Article grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--bl-space-6);
+  margin-bottom: var(--bl-space-12);
+}
+
+/* Article card */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bl-color-gunmetal);
+  border: 1px solid var(--bl-color-steel-700);
+  border-radius: var(--bl-radius-card);
+  padding: var(--bl-space-8);
+  text-decoration: none;
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card:hover {
+  border-color: var(--bl-color-reactor-500);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), 0 0 40px rgba(30, 86, 255, 0.1);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--bl-space-4);
+}
+
+.tag {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.6875rem;
+}
+
+.readTime {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--bl-color-steel-500);
+}
+
+.cardTitle {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--bl-text-primary);
+  line-height: 1.4;
+  margin-bottom: var(--bl-space-4);
+}
+
+.cardExcerpt {
+  font-size: 0.875rem;
+  color: var(--bl-text-secondary);
+  line-height: 1.65;
+  margin-bottom: var(--bl-space-6);
+  flex: 1;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--bl-space-5);
+  border-top: 1px solid var(--bl-color-steel-800);
+}
+
+.cardDate {
+  font-size: 0.75rem;
+  color: var(--bl-color-steel-500);
+}
+
+.cardCta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8125rem;
+  color: var(--bl-color-reactor-400);
+  font-weight: 500;
+}
+
+/* Disclaimer */
+.disclaimer {
+  background: var(--bl-color-gunmetal);
+  border: 1px solid var(--bl-color-steel-700);
+  border-radius: var(--bl-radius-comfortable);
+  padding: var(--bl-space-5) var(--bl-space-6);
+  font-size: 0.8125rem;
+  color: var(--bl-color-steel-500);
+  line-height: 1.65;
+}
+
+.disclaimer p { margin: 0; }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+}
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}

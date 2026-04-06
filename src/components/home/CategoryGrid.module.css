@@ -1,0 +1,88 @@
+.section { background: var(--bl-bg-primary); }
+
+.eyebrow {
+  color: var(--bl-color-reactor-400);
+  margin-bottom: var(--bl-space-2);
+  display: block;
+}
+
+.heading {
+  margin-bottom: var(--bl-space-8);
+  color: var(--bl-text-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--bl-space-4);
+}
+
+.tile {
+  position: relative;
+  background: var(--bl-color-gunmetal);
+  border: 1px solid var(--bl-color-steel-700);
+  border-radius: var(--bl-radius-card);
+  padding: var(--bl-space-6);
+  padding-top: calc(var(--bl-space-6) + var(--bl-space-2));
+  text-decoration: none;
+  overflow: hidden;
+  transition: box-shadow 250ms ease, transform 250ms ease, border-color 250ms ease;
+  display: flex;
+  flex-direction: column;
+  gap: var(--bl-space-2);
+  box-shadow: var(--bl-shadow-whisper);
+}
+.tile:hover {
+  transform: translateY(-3px);
+  border-color: var(--cat-color, var(--bl-color-reactor-500));
+  box-shadow:
+    0 0 0 1px var(--cat-color, var(--bl-color-reactor-500)),
+    0 12px 32px rgba(0,0,0,0.4),
+    0 0 40px color-mix(in srgb, var(--cat-color, var(--bl-color-reactor-500)) 15%, transparent);
+}
+
+.tile--span { grid-column: span 4; flex-direction: row; align-items: center; gap: var(--bl-space-6); }
+
+.tileStripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--cat-color, var(--bl-color-reactor-500));
+}
+
+.tileLabel {
+  color: var(--cat-color, var(--bl-color-reactor-400));
+  margin-bottom: 0;
+}
+
+.tileDesc {
+  font-size: 0.875rem;
+  color: var(--bl-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.arrow {
+  font-size: 1.25rem;
+  color: var(--bl-color-steel-600);
+  transition: color 150ms ease, transform 150ms ease;
+  margin-top: auto;
+  align-self: flex-end;
+}
+.tile:hover .arrow {
+  color: var(--cat-color, var(--bl-color-reactor-400));
+  transform: translateX(3px);
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .tile--span { grid-column: span 2; }
+}
+
+@media (max-width: 500px) {
+  .grid { grid-template-columns: 1fr; }
+  .tile--span { grid-column: span 1; flex-direction: column; }
+}

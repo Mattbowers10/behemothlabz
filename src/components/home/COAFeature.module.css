@@ -1,0 +1,86 @@
+.section { background: var(--bl-color-gunmetal); }
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--bl-space-16);
+  align-items: center;
+}
+
+.eyebrow { color: var(--bl-color-reactor-400); display: block; margin-bottom: var(--bl-space-2); }
+.heading { margin-bottom: var(--bl-space-4); color: var(--bl-text-primary); }
+.desc { color: var(--bl-text-secondary); margin-bottom: var(--bl-space-8); line-height: 1.7; }
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--bl-space-6);
+  margin-bottom: var(--bl-space-8);
+}
+
+.step { display: flex; gap: var(--bl-space-4); align-items: flex-start; }
+
+.stepIcon {
+  width: 36px;
+  height: 36px;
+  background: rgba(30,86,255,.12);
+  border: 1px solid rgba(30,86,255,.2);
+  border-radius: var(--bl-radius-standard);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bl-color-reactor-400);
+  flex-shrink: 0;
+}
+
+.stepLabel { color: var(--bl-text-primary); margin-bottom: 2px; }
+.stepDesc { font-size: 0.875rem; color: var(--bl-text-secondary); margin-bottom: 0; }
+
+/* COA panel */
+.panel {
+  background: var(--bl-color-abyss);
+  border: 1px solid var(--bl-color-steel-700);
+  border-radius: var(--bl-radius-card);
+  overflow: hidden;
+  box-shadow: var(--bl-shadow-elevated);
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bl-space-4);
+  border-bottom: 1px solid var(--bl-color-steel-700);
+  background: var(--bl-color-slate);
+}
+
+.panelTitle { color: var(--bl-text-primary); }
+
+.panelBadge {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--bl-color-success);
+  background: rgba(16,185,129,.15);
+  border: 1px solid rgba(16,185,129,.3);
+  border-radius: var(--bl-radius-comfortable);
+  padding: 2px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.panelRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bl-space-3) var(--bl-space-4);
+  border-bottom: 1px solid var(--bl-color-steel-800);
+}
+.panelRow:last-child { border-bottom: none; }
+
+.panelKey { font-size: 0.8125rem; color: var(--bl-text-secondary); }
+.panelVal { font-size: 0.875rem; color: var(--bl-text-primary); }
+.panelValGreen { color: var(--bl-color-success); font-weight: 600; }
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr; gap: var(--bl-space-12); }
+}

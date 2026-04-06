@@ -1,0 +1,38 @@
+.disclaimer {
+  font-size: 0.8125rem;
+  color: var(--bl-text-secondary);
+  line-height: 1.54;
+  padding: var(--bl-space-3) var(--bl-space-4);
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--bl-border-primary);
+  border-radius: var(--bl-radius-standard);
+}
+
+.disclaimer--prominent {
+  border-left: 3px solid var(--bl-color-warning);
+  background: rgba(245,158,11,.05);
+}
+
+.label {
+  display: block;
+  font-family: var(--bl-font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--bl-color-warning);
+  margin-bottom: var(--bl-space-2);
+}
+
+.compact {
+  font-size: 0.8125rem;
+  color: var(--bl-color-steel-500);
+  font-style: italic;
+  margin: 0;
+}
+
+.footer {
+  font-size: 0.75rem;
+  color: var(--bl-color-steel-500);
+  line-height: 1.6;
+}

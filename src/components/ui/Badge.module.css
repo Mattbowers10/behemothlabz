@@ -1,0 +1,33 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: var(--bl-radius-comfortable);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.badge--verified  { background: var(--bl-color-success); color: #fff; }
+.badge--new       { background: var(--bl-color-reactor-500); color: #fff; }
+.badge--sale      { background: var(--bl-color-warning); color: var(--bl-color-abyss); }
+.badge--out-of-stock { background: var(--bl-color-steel-300); color: var(--bl-color-steel-600); }
+.badge--research-only {
+  background: rgba(245,158,11,.15);
+  color: var(--bl-color-warning);
+  border: 1px solid rgba(245,158,11,.3);
+}
+
+/* Category badges — 15% opacity bg with category color text */
+.badge--category { }
+
+.badge--cat-sarms        { background: rgba(255,107,53,.15); color: var(--bl-color-sarms); }
+.badge--cat-peptides     { background: rgba(0,201,167,.15);  color: var(--bl-color-peptides); }
+.badge--cat-nootropics   { background: rgba(168,85,247,.15); color: var(--bl-color-nootropics); }
+.badge--cat-prohormones  { background: rgba(239,68,68,.15);  color: var(--bl-color-prohormones); }
+.badge--cat-supplements  { background: rgba(34,197,94,.15);  color: var(--bl-color-supplements); }
+.badge--cat-injectables  { background: rgba(239,68,68,.15);  color: var(--bl-color-prohormones); }
+.badge--cat-merch        { background: var(--bl-color-steel-700); color: var(--bl-text-secondary); }
