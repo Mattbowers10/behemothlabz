@@ -6,18 +6,23 @@
 
 :root {
   /* ── Foundation ─────────────────────────────────────────── */
-  --bl-color-abyss:    #0C0E14;
-  --bl-color-gunmetal: #161A22;
-  --bl-color-slate:    #1E2330;
+  --bl-color-abyss:    #09080F;
+  --bl-color-gunmetal: #100E1C;
+  --bl-color-slate:    #1A172B;
   --bl-color-ivory:    #F5F3EF;
   --bl-color-white:    #FFFFFF;
 
-  /* ── Reactor Blue (Primary Action) ──────────────────────── */
+  /* ── Reactor Blue (links, secondary UI) ─────────────────── */
   --bl-color-reactor-300: #6B91FF;
   --bl-color-reactor-400: #3D6FFF;
   --bl-color-reactor-500: #1E56FF;
   --bl-color-reactor-600: #0A3FE0;
   --bl-color-reactor-700: #0830B0;
+
+  /* ── Miami Vice Neons ───────────────────────────────────── */
+  --bl-color-neon-cyan:   #00F5FF;
+  --bl-color-neon-pink:   #FF2D9B;
+  --bl-color-neon-violet: #8B00FF;
 
   /* ── Category Colors (accent-only — never full bg) ───────── */
   --bl-color-sarms:       #FF6B35;  /* Ember Orange */
@@ -47,6 +52,10 @@
   --bl-shadow-whisper:  rgba(97,104,117,.05) 0px 1px 1px, rgba(97,104,117,.05) 0px 2px 2px;
   --bl-shadow-subtle:   rgba(97,104,117,.08) 0px 2px 4px, rgba(97,104,117,.05) 0px 4px 8px;
   --bl-shadow-elevated: rgba(97,104,117,.12) 0px 4px 8px, rgba(97,104,117,.06) 0px 8px 16px;
+
+  /* ── Neon Glow Shadows ───────────────────────────────────── */
+  --bl-shadow-glow-pink: 0 0 20px rgba(255,45,155,0.5), 0 0 48px rgba(255,45,155,0.2);
+  --bl-shadow-glow-cyan: 0 0 20px rgba(0,245,255,0.45), 0 0 48px rgba(0,245,255,0.15);
 
   /* ── Border Radius (structural — max 8px) ────────────────── */
   --bl-radius-micro:      2px;

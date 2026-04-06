@@ -126,14 +126,14 @@ a:focus-visible {
 
 /* ── Gradient Text ───────────────────────────────────────── */
 .bl-gradient {
-  background: linear-gradient(135deg, #1E56FF 0%, #c026d3 60%, #FF2D9B 100%);
+  background: linear-gradient(135deg, #00F5FF 0%, #8B00FF 55%, #FF2D9B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   filter:
-    drop-shadow(0 0 18px rgba(30, 86, 255, 0.55))
-    drop-shadow(0 0 36px rgba(255, 45, 155, 0.35));
+    drop-shadow(0 0 18px rgba(0, 245, 255, 0.55))
+    drop-shadow(0 0 36px rgba(255, 45, 155, 0.45));
 }
 
 /* ── Compliance Disclaimer ───────────────────────────────── */
@@ -169,7 +169,7 @@ a:focus-visible {
 
 /* ── Selection ───────────────────────────────────────────── */
 ::selection {
-  background: rgba(30,86,255,.3);
+  background: rgba(255,45,155,.3);
   color: var(--bl-color-steel-100);
 }
 
